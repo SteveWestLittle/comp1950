@@ -1,0 +1,201 @@
+@charset "utf-8";
+ html {
+     box-sizing: border-box;
+     background-image: url("../images/background.jpg");
+     background-size: cover;
+     background-position: center;
+     height: 100%;
+}
+ *, *:before, *:after {
+     box-sizing: inherit;
+}
+ body {
+     display: flex;
+     flex-direction: column;
+     min-height: 420px;
+     max-width: 70%;
+     margin: auto;
+     height: 100%;
+}
+ header {
+     background-color: rgba(0,0,0, .6);
+     color: white;
+     display: flex;
+     align-items: center;
+     padding: 10px 40px;
+     justify-content: space-between;
+     font-family: sans-serif;
+}
+ header h1 {
+     margin: 16px;
+     text-shadow: 3px 3px 5px #000000;
+     
+}
+ header h2 {
+     text-align: center;
+     margin-left: 15px;
+     text-shadow: 3px 3px 5px #000000;
+}
+ nav ul {
+     list-style-type: none;
+     display: flex;
+     padding: 0px;
+}
+ nav ul li a {
+     display: inline;
+     background-color: rgba(0,0,0, .6);
+     margin: 1px;
+     padding: 10px 15px;
+     font-family: serif;
+}
+ nav li {
+     padding: 10px 0px;
+}
+ nav ul a:hover {
+     background-color: rgba(0,0,0, .9);
+}
+ nav ul a {
+     text-decoration: none;
+     color: white;
+}
+ .venuelist {
+    
+}
+ main {
+     flex: 1;
+}
+ .venues {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: 100%;
+     flex: 1;
+}
+ .venues h1 {
+     text-align: center;
+     font-family: sans-serif;
+     color: white;
+     text-shadow: 3px 3px 5px #000000;
+}
+ .venues a {
+     color: black;
+}
+ .venuelist {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-content: flex-start;
+     
+     flex: 1;
+}
+ .venues p {
+     background-color: rgba(0,0,0, .6);
+     color: white;
+     padding: 15px;
+     font-size: 1.7rem;
+     text-decoration: none;
+     border-radius: 10px;
+}
+ .venues p {
+     text-align: center;
+}
+ figure {
+     margin: auto;
+     padding: 10px;
+}
+ img {
+     box-shadow: 10px 10px 10px;
+     max-width: 230px;
+}
+ img:hover {
+     box-shadow: 13px 13px 13px;
+}
+ figcaption {
+     text-align: center;
+     background-color: rgba(0,0,0, .6);
+     color: white;
+     margin-bottom: 4px;
+     font-size: 1.2rem;
+}
+ .venues p {
+     background-color: rgba(0,0,0, .6);
+     color: white;
+     padding: 15px;
+     font-size: 1.7rem;
+     text-decoration: none;
+     border-radius: 10px;
+}
+ .venues p {
+     text-align: center;
+}
+ footer {
+     color: white;
+     background-color: rgba(0,0,0, .6);
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0px 40px;
+     margin-top: 20px;
+}
+ footer a {
+     color: white;
+}
+ footer div {
+     margin-left: 10px;
+}
+ @media only screen and (max-width: 1100px) {
+     body {
+        max-width:100%;
+    }
+     header {
+        flex-direction: column;
+    }
+     header ul {
+        padding: 0px;
+    }
+     header h1 {
+        text-align: center;
+    }
+     header h2 {
+        margin: 15px;
+    }
+     ul {
+        margin: 0px;
+    }
+     .venues {
+        max-width: 85%;
+         margin: auto;
+    }
+     footer div p {
+        margin: 4px;
+    }
+     footer {
+         padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+         ul {
+            flex-wrap: wrap;
+             justify-content: center;
+        }
+         nav ul li a {
+            width: 30%;
+             text-align: center;
+        }
+         header {
+            padding: 10px 20px;
+        }
+         header h2 {
+            font-size: 1rem;
+        }
+         header h1 {
+            font-size: 1.3rem;
+             width: 100%;
+        }
+    }
+     
